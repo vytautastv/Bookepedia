@@ -3,3 +3,22 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import BookSearch from './components/BookSearch';
 import BookCards from './components/BookCards';
+
+const queryClient = new QueryClient();
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Router>
+        <div className="App">
+        <Routes>
+            <Route path="/" element={<BookSearch />} />
+            <Route path="/books/:query" element={<BookList />} />
+        </Routes>
+        </div>
+      </Router>
+    </QueryClientProvider>
+  );
+}
+
+export default App;

@@ -16,7 +16,7 @@ const BookSearch = () => {
     return (
       <Box className="book-search" p={4}>
         <Typography variant="h4" gutterBottom>
-          Book Explorer
+          Bookepedia 
         </Typography>
         <Input
           type="text"

@@ -13,7 +13,7 @@ function App() {
         <div className="App">
         <Routes>
             <Route path="/" element={<BookSearch />} />
-            <Route path="/books/:query" element={<BookList />} />
+            <Route path="/books/:query" element={<BookCards />} />
         </Routes>
         </div>
       </Router>

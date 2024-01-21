@@ -22,7 +22,7 @@
     background-color: white;
     border: 2px solid rgb(238, 164, 68);
     border-radius: 4px;
-
+    
 }
 
 .book-search button {
@@ -33,10 +33,13 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    
+    
 }
 
 
 .book-search button:hover {
     background-color: #e6b800; 
+    
 
 }

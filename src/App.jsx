@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import BookSearch from './components/BookSearch';
 import BookCards from './components/BookCards';
 import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
 
 
@@ -14,6 +15,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Router>
         <div className="App">
+          <NavBar />
         <Routes>
             <Route path="/" element={<BookSearch />} />
             <Route path="/books/:query" element={<BookCards />} />

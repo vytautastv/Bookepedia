@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Input, Button, Box, Typography} from '@mui/material';
 import '../styles/BookSearch.css';
-import Footer from './Footer';
 
 const BookSearch = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -33,8 +32,6 @@ const BookSearch = () => {
         <Button variant="contained" onClick={handleSearch}>
           Search
         </Button>
-        <Footer>
-      </Footer>
       </Box>
       
     );

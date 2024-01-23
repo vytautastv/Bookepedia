@@ -18,7 +18,8 @@ function App() {
             <Route path="/" element={<BookSearch />} />
             <Route path="/books/:query" element={<BookCards />} />
       
-        </Routes>
+        </Routes> 
+        <Footer />
         </div>
       </Router>
     </QueryClientProvider>

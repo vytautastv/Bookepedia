@@ -5,6 +5,7 @@ import axios from 'axios';
 import { Box, CircularProgress } from '@mui/material';
 import '../styles/BookCards.css';
 
+
 const fetchBooks = async (query) => {
     const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
     return response.data.items || [];

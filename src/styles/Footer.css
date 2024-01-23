@@ -1,24 +1,16 @@
-html, body {
-  height: 100%;
-  margin: 0;
+/* Add the following styles to ensure the footer is at the bottom */
+#root {
+  flex: 1; /* This will make sure the content above the footer takes remaining space */
 }
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensure body extends at least the full height of the viewport */
-}
-
-.section_padding {
-  padding: 2rem 4rem; /* Adjusted padding for smaller section */
-}
-
 .footer {
-  background-color: #2d2d32;
-  margin-bottom; 25px: /* Push the footer to the bottom of the page */
+  background-color: #D1C9B8;
+  margin-top: auto;
   display: flex;
   flex-direction: column;
-  
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1; /* Ensure the footer is above other elements */
 }
 
 .sb__footer {
@@ -36,6 +28,11 @@ body {
   margin-bottom: 1rem; /* Adjusted margin for smaller spacing */
 }
 
+.sb__footer-links-div a {
+  color: #6d6d62; /* Set the text color for links */
+  text-decoration: none; /* Remove underline for links */
+}
+
 .sb__footer-links-div {
   display: flex;
   flex-direction: column;
@@ -45,7 +42,7 @@ body {
 }
 
 a {
-  color: rgb(175, 175, 179);
+  color: rgb#6d6d62;
   text-decoration: none;
 }
 
@@ -58,18 +55,6 @@ a {
   width: 20px; /* Set a specific width for all social media icons */
   height: 20px; /* Set a specific height for all social media icons */
   margin-right: 0.5rem; /* Adjusted margin for spacing between icons */
-}
-
-.sb__footer-links-div h4 {
-  font-size: 12px; /* Adjusted font size for smaller headings */
-  line-height: 15px; /* Adjusted line height for smaller headings */
-  margin-bottom: 0.5rem; /* Adjusted margin for smaller spacing */
-}
-
-.sb__footer-links-div p {
-  font-size: 10px; /* Adjusted font size for smaller text */
-  line-height: 15px; /* Adjusted line height for smaller text */
-  margin: 0.3rem; /* Adjusted margin for smaller spacing */
 }
 
 .sb__footer-below {

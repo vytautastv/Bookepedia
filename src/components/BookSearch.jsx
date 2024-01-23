@@ -16,14 +16,18 @@ const BookSearch = () => {
   
     return (
       <Box className="book-search" p={4}>
-        <Typography variant="h4" gutterBottom>
+        <Typography variant="h4" gutterBottom style={{ color: 'rgb(102, 97, 82)'}}>
           Bookepedia 
+        </Typography>
+        <Typography variant="h6" gutterBottom style={{ color: 'rgb(102, 97, 82)'}}>
+        Embark on a journey of literary discovery with books by your favourite authors! 
         </Typography>
         <Input
           type="text"
           placeholder="Enter book title or author"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          disableUnderline
         />
         <Button variant="contained" onClick={handleSearch}>
           Search

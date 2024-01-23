@@ -53,79 +53,117 @@ z-index: 1; /* Ensure the footer is above other elements */
     margin-right: 0.5rem; /* Adjusted margin for spacing between icons */
   }
   
+.sb__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sb__footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem; /* Adjusted margin for smaller spacing */
+}
+
+.sb__footer-links-div {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 150px;
+  margin: 0.5rem; /* Adjusted margin for smaller spacing */
+}
+
+a {
+  color: rgb(175, 175, 179);
+  text-decoration: none;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+}
+
+.socialmedia img {
+  width: 20px; /* Set a specific width for all social media icons */
+  height: 20px; /* Set a specific height for all social media icons */
+  margin-right: 0.5rem; /* Adjusted margin for spacing between icons */
+}
+
+.sb__footer-links-div h4 {
+  font-size: 12px; /* Adjusted font size for smaller headings */
+  line-height: 15px; /* Adjusted line height for smaller headings */
+  margin-bottom: 0.5rem; /* Adjusted margin for smaller spacing */
+}
+
+.sb__footer-links-div p {
+  font-size: 10px; /* Adjusted font size for smaller text */
+  line-height: 15px; /* Adjusted line height for smaller text */
+  margin: 0.3rem; /* Adjusted margin for smaller spacing */
+}
+
+.sb__footer-below {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+
+.sb__footer-below-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.sb__footer-below-links p {
+  color: white;
+  line-height: 12px; /* Adjusted line height for smaller text */
+  font-weight: 600;
+  margin-left: 1rem; /* Adjusted margin for smaller spacing */
+  font-size: 10px; /* Adjusted font size for smaller text */
+}
+
+hr {
+  border: 1px solid white; /* Adjust the style of your HR line */
+  width: 100%;
+  margin: 0.5rem 0; /* Adjusted margin for smaller spacing */
+}
+
+.sb__footer-copyright p {
+  color: white;
+  font-weight: 600;
+  margin-left: 1rem; /* Adjusted margin for smaller spacing */
+  font-size: 10px; /* Adjusted font size for smaller text */
+}
+
+@media screen and (max-width: 850px) {
   .sb__footer-links-div h4 {
-    font-size: 12px; /* Adjusted font size for smaller headings */
-    line-height: 15px; /* Adjusted line height for smaller headings */
-    margin-bottom: 0.5rem; /* Adjusted margin for smaller spacing */
+    font-size: 14px; /* Adjusted font size for smaller headings */
   }
-  
+
   .sb__footer-links-div p {
-    font-size: 10px; /* Adjusted font size for smaller text */
-    line-height: 15px; /* Adjusted line height for smaller text */
-    margin: 0.3rem; /* Adjusted margin for smaller spacing */
+    font-size: 12px; /* Adjusted font size for smaller text */
   }
-  
-  .sb__footer-below {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0.2rem;
-  }
-  
-  .sb__footer-below-links {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .sb__footer-below-links p {
-    color: white;
-    line-height: 12px; /* Adjusted line height for smaller text */
-    font-weight: 600;
-    margin-left: 1rem; /* Adjusted margin for smaller spacing */
-    font-size: 10px; /* Adjusted font size for smaller text */
-  }
-  
-  hr {
-    border: 1px solid white; /* Adjust the style of your HR line */
-    width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .sb__footer-links-div {
     margin: 0.5rem 0; /* Adjusted margin for smaller spacing */
   }
-  
-  .sb__footer-copyright p {
-    color: white;
-    font-weight: 600;
-    margin-left: 1rem; /* Adjusted margin for smaller spacing */
-    font-size: 10px; /* Adjusted font size for smaller text */
+
+  .sb__footer-below-links p {
+    margin-left: 0.5rem; /* Adjusted margin for smaller spacing */
+    margin-top: 0.5rem; /* Adjusted margin for smaller spacing */
   }
-  
-  @media screen and (max-width: 850px) {
-    .sb__footer-links-div h4 {
-      font-size: 14px; /* Adjusted font size for smaller headings */
-    }
-  
-    .sb__footer-links-div p {
-      font-size: 12px; /* Adjusted font size for smaller text */
-    }
+}
+
+@media screen and (max-width: 400px) {
+  .sb__footer-links-div h4 {
+    font-size: 10px; /* Adjusted font size for smaller headings */
   }
-  
-  @media screen and (max-width: 550px) {
-    .sb__footer-links-div {
-      margin: 0.5rem 0; /* Adjusted margin for smaller spacing */
-    }
-  
-    .sb__footer-below-links p {
-      margin-left: 0.5rem; /* Adjusted margin for smaller spacing */
-      margin-top: 0.5rem; /* Adjusted margin for smaller spacing */
-    }
+
+  .sb__footer-links-div p {
+    font-size: 8px; /* Adjusted font size for smaller text */
   }
-  
-  @media screen and (max-width: 400px) {
-    .sb__footer-links-div h4 {
-      font-size: 10px; /* Adjusted font size for smaller headings */
-    }
-  
-    .sb__footer-links-div p {
-      font-size: 8px; /* Adjusted font size for smaller text */
-    }
-  }
-  
+}

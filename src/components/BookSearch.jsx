@@ -28,6 +28,7 @@ const BookSearch = () => {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           disableUnderline
+          style = {{width: "400px"}}
         />
         <Button variant="contained" onClick={handleSearch}>
           Search

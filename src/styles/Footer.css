@@ -1,27 +1,19 @@
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure body extends at least the full height of the viewport */
-  }
-  
-  .section_padding {
-    padding: 2rem 4rem; /* Adjusted padding for smaller section */
-  }
-  
-  .footer {
-    background-color: #2d2d32;
-    margin-top: auto; /* Push the footer to the bottom of the page */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally within the footer */
-    justify-content: center; /* Center items vertically within the footer */
-  }
-  
+
+/* Add the following styles to ensure the footer is at the bottom */
+#root {
+flex: 1; /* This will make sure the content above the footer takes remaining space */
+}
+
+.footer {
+background-color: #2d2d32;
+margin-top: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+z-index: 1; /* Ensure the footer is above other elements */
+}
   .sb__footer {
     display: flex;
     flex-direction: column;

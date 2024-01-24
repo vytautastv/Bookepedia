@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 
 
 
+
 const queryClient = new QueryClient();
 
 function App() {
@@ -19,7 +20,6 @@ function App() {
         <Routes>
             <Route path="/" element={<BookSearch />} />
             <Route path="/books/:query" element={<BookCards />} />
-      
         </Routes> 
         <Footer />
         </div>

@@ -1,10 +1,15 @@
+// NavBar.js
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+  const handleSignUpClick = () => {
+    window.open('https://form.jotform.com/240235907522351', '_blank');
+  };
+
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'rgb(102, 97, 82)'}} >
+    <AppBar position="static" sx={{ backgroundColor: 'rgb(102, 97, 82)' }}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Bookepedia
@@ -15,7 +20,7 @@ const NavBar = () => {
         <Button color="inherit" component={Link} to="/books/">
           About
         </Button>
-        <Button color="inherit" component={Link} to="/books/">
+        <Button color="inherit" onClick={handleSignUpClick}>
           Sign Up
         </Button>
       </Toolbar>
